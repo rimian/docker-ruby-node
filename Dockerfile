@@ -1,5 +1,7 @@
 FROM ruby:2.1.4
 
+MAINTAINER Rimian Perkins
+
 RUN \
       cd \
   &&  git clone https://github.com/joyent/node.git \
@@ -13,4 +15,4 @@ RUN \
   &&  make install
 
 RUN \
-      node -v
+  rm -rf ~/node
