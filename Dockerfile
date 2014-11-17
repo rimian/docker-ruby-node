@@ -2,10 +2,10 @@ FROM        ruby:2.1.4
 
 MAINTAINER  Rimian Perkins
 
-RUN         cd \
+RUN 	    cd \
         &&  git clone https://github.com/joyent/node.git \
         &&  cd node \
-        &&  git checkout v0.10.33
+        &&  git checkout v0.10.33 \
         &&  ./configure \
         &&  make \
         &&  make install \
