@@ -6,7 +6,7 @@ RUN \
             cd \
         &&  git clone https://github.com/joyent/node.git \
         &&  cd node \
-        &&  git checkout v0.11.9
+        &&  git checkout v0.11.9 \
         &&  ./configure \
         &&  make \
         &&  make install \
