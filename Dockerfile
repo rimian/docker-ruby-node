@@ -11,3 +11,5 @@ RUN         cd \
         &&  make install \
         &&  cd .. \
         &&  rm -rfv ~/node
+
+RUN         npm install -g bower
